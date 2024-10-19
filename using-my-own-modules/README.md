@@ -9,13 +9,13 @@ These are publicly available modules with detailed documentation, [refer here](h
 With the help of this freely available specific provider modules, I have created below said services of aws
 - **VPC**
      * This module helped me in creating Vpc related resources by passing our own arguments
-     * [refer here](git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/vpc) for official docs
+     * [refer here](https://github.com/Srikanthkovuri/Terraform-modules/tree/main/vpc) for  docs
 - **SECURITY-GROUP**
      * This module helped me in creating security-group related resources by passing our own arguments
-     * [refer here](git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/securitygrp) for official docs
+     * [refer here](https://github.com/Srikanthkovuri/Terraform-modules/tree/main/securitygrp) for official docs
 - **AUTOSCALEGROUP**
      * This module helped me in creating Autoscale group with load balancer related resources by passing our own arguments
-     * [refer here](git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/autoscalelb) for official docs
+     * [refer here](https://github.com/Srikanthkovuri/Terraform-modules/tree/main/autoscalelb) for official docs
 
 Here, I created recources related to `vpc`, `application load balancer with target group`, `autoscalegroup with load balancer`, `launch template from ami` 
 
@@ -86,11 +86,11 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_asgwithlb"></a> [asgwithlb](#module\_asgwithlb) | git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/autoscalelb | n/a |
-| <a name="module_dbsg"></a> [dbsg](#module\_dbsg) | git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/securitygrp | n/a |
-| <a name="module_lbsg"></a> [lbsg](#module\_lbsg) | git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/securitygrp | n/a |
-| <a name="module_vpc"></a> [vpc](#module\_vpc) | git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/vpc | n/a |
-| <a name="module_websg"></a> [websg](#module\_websg) | git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/securitygrp | n/a |
+| <a name="module_asgwithlb"></a> [asgwithlb](#module\_asgwithlb) | git:: https://github.com/Srikanthkovuri/Terraform-modules/tree/main/autoscalelb | n/a |
+| <a name="module_dbsg"></a> [dbsg](#module\_dbsg) | git::https://github.com/Srikanthkovuri/Terraform-modules/tree/main/securitygrp | n/a |
+| <a name="module_lbsg"></a> [lbsg](#module\_lbsg) | git::https://github.com/Srikanthkovuri/Terraform-modules/tree/main/securitygrp | n/a |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | git::https://github.com/Srikanthkovuri/Terraform-modules/blob/main/vpc | n/a |
+| <a name="module_websg"></a> [websg](#module\_websg) | git::https://github.com/Srikanthkovuri/Terraform-modules/tree/main/securitygrp | n/a |
 
 ## Resources
 

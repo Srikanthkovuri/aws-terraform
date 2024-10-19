@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/vpc"
+  source = "git::https://github.com/Srikanthkovuri/Terraform-modules.git//vpc"
   vpc_config = {
     cidr_block           = var.vpc_info.cidr_block
     enable_dns_hostnames = true
@@ -43,7 +43,7 @@ module "vpc" {
 
 # Web security group to open 5000 port 
 module "websg" {
-  source = "git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/securitygrp"
+  source = "git::https://github.com/Srikanthkovuri/Terraform-modules.git//securitygrp"
   vpc_id = module.vpc.id
   #count  = length(var.web_security_group_info)
   security_group_info = {
@@ -67,7 +67,7 @@ module "websg" {
   }
 }
 module "dbsg" {
-  source = "git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/securitygrp"
+  source = "git::https://github.com/Srikanthkovuri/Terraform-modules.git//securitygrp"
   vpc_id = module.vpc.id
   count  = length(var.db_security_group_info)
   security_group_info = {
@@ -85,7 +85,7 @@ module "dbsg" {
   }
 }
 module "lbsg" {
-  source = "git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/securitygrp"
+  source = "git::https://github.com/Srikanthkovuri/Terraform-modules.git//securitygrp"
   vpc_id = module.vpc.id
   count  = length(var.lb_security_group_info)
   security_group_info = {
@@ -103,7 +103,7 @@ module "lbsg" {
   }
 }
 module "asgwithlb" {
-  source = "git::https://github.com/Srikanthkovuri/Terraform-modules.git//aws/autoscalelb"
+  source = "git::https://github.com/Srikanthkovuri/Terraform-modules.git//autoscalelb"
   ami_info = {
     id       = var.ami_info
     username = "ubuntu"

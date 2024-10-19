@@ -62,10 +62,11 @@ In this, I created resources like
    * ec2-instance 
 
 
-## sample.tf
-we need to create a file with extension as '.tf'
+## using-my-own-modules
+To create my desired state, I used my own modules which has resources related to `vpc`, `securitygroup`,`autosaclegroup with loadbalancer`
 
-In this **sample.tf**,
-  used aws as provider 
-  
-  I had created a vpc with name as 'base'
+In this, I created resources  like
+  * vpc
+  * securitygroup for app,db and loadbalancer
+  * autoscale group with loadbalancer to an ami instances
+
